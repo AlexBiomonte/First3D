@@ -582,6 +582,7 @@ GameObject:
   - component: {fileID: 529450661}
   - component: {fileID: 529450662}
   - component: {fileID: 529450664}
+  - component: {fileID: 529450665}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -764,6 +765,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3d2512b139c814689b3a9bb4da41b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &529450665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529450656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b54eb155f52dbd4f9159b839ec63f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 5
 --- !u!1 &571911813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,7 +1577,7 @@ GameObject:
   - component: {fileID: 858317243}
   m_Layer: 0
   m_Name: Trap
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

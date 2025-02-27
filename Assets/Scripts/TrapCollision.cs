@@ -7,7 +7,9 @@ public class TrapCollision : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
 
-        Debug.Log("Death");
-        Destroy(other.gameObject);
+        Debug.Log("hit");
+        //Destroy(other.gameObject);
+
+
     }
 }

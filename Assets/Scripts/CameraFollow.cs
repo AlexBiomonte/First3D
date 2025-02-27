@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+
+    // Gets player/Objects Transform Data and puts it into target Var
     public Transform target;
     public float transitionSpeed;
 
@@ -19,9 +21,19 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //check if player exists
+        if (target == null)
+        {
+
+            enabled = false;
+            return; 
+
+        }
+
         //Var that shows where to camera should go
         Vector3 targetPosition = target.position - offset;
         transform.position = Vector3.Lerp(transform.position,targetPosition,transitionSpeed*Time.deltaTime);
-
+        
     }
 }
